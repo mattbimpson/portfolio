@@ -1,8 +1,22 @@
 import React from 'react';
 import Chip from '@material-ui/core/Chip';
+import { makeStyles } from '@material-ui/core/styles';
 import { Container, Text, HeaderText, ChipContainer } from './Styles';
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    '& > *': {
+      margin: theme.spacing(0.5),
+    },
+  },
+}));
+
 const HomePage: React.FC<any> = () => {
+
+  const classes = useStyles();
 
   function linkToProjectType(language: string): void {
     window.open(`https://bitbucket.org/mbimpson/?language=${language}&sort=-updated_on`, '_blank');
@@ -22,7 +36,7 @@ const HomePage: React.FC<any> = () => {
           My core skills lie in Javascript frameworks such as Angular and React, and with C#.
         </Text>
       </Container>
-      <ChipContainer>
+      <ChipContainer className={classes.root}>
         <Chip label="Angular" onClick={() => linkToProjectType('typescript')} />
         <Chip label="ReactJS" onClick={() => linkToProjectType('typescript')} />
         <Chip label="VueJS" onClick={() => linkToProjectType('typescript')} />

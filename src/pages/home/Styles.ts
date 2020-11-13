@@ -28,7 +28,4 @@ export const HeaderText =
   `;
 
 export const ChipContainer =
-    styled(Container)`
-      display: flex;
-      justify-content: space-between;
-    `;
+    styled(Container)``;
