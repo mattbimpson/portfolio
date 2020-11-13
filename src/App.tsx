@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './App.css';
+import { Container } from './App-Styles';
 import Header from './components/HeaderComponent';
-import HomePage from './pages/Home';
-
+import HomePage from './pages/home/Home';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header></Header>
-      <BrowserRouter>
-        <HomePage />
-      </BrowserRouter>
-    </div>
+      <Container>
+        
+        <BrowserRouter>
+          <HomePage />
+        </BrowserRouter>
+      </Container>
+    </>
   );
 }
 

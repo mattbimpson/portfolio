@@ -1,23 +1,22 @@
 import React, { useState } from 'react';
-
-import './Styles.scss';
+import { Container, Link, Nav } from './Styles';
 
 const Header: React.FC<any> = () => {
   return (
     <>
-      <div className="container">
-        <div className="nav">
-          <a href="/home">
+      <Container>
+        <Nav>
+          <Link href="/home">
             Home
-          </a>
-          <a href="/work">
+          </Link>
+          <Link href="/work">
             Work
-          </a>
-          <a href="/contact">
+          </Link>
+          <Link href="/contact">
             Contact
-          </a>
-        </div>
-      </div>
+          </Link>
+        </Nav>
+      </Container>
     </>
   )
 }
