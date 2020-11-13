@@ -7,6 +7,6 @@ export const Container =
     margin-right: 200px;
 
     @media (max-width: 780px) {
-      margin: 20px;
+      margin: 0px;
     }
   `;

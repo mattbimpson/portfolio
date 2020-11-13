@@ -1,12 +1,18 @@
 import styled from 'styled-components';
 
 export const Container =
-	styled.div`
+  styled.div`
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     width: 800px;
     margin: 0 auto;
     margin-top: 50px;
+
+    @media (max-width: 780px) {
+      padding: 10px;
+      width: 100%;
+      margin-top: 0px;
+    }
   `;
 
 export const Text =

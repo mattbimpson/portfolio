@@ -14,6 +14,11 @@ export const Nav = styled.div`
   margin-right: 200px;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media (max-width: 780px) {
+    margin-left: 20px;
+    margin-right: 0px;
+  }
 `;
 
 export const Link = styled.a`
