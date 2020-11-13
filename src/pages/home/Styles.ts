@@ -18,6 +18,7 @@ export const Container =
 export const Text =
   styled.p`
     color: rgba(255, 255, 255, 1);
+    font-weight: 500;
   `;
 
 export const HeaderText =
