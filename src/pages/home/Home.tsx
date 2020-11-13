@@ -4,8 +4,12 @@ import { Container, Text, HeaderText, ChipContainer } from './Styles';
 
 const HomePage: React.FC<any> = () => {
 
-  function linkToProject(language: string): void {
+  function linkToProjectType(language: string): void {
     window.open(`https://bitbucket.org/mbimpson/?language=${language}&sort=-updated_on`, '_blank');
+  }
+
+  function linkToProject(): void {
+    window.open('https://bitbucket.org/mbimpson/mattbimpson/src/master/', '_blank');
   }
 
   return (
@@ -19,13 +23,14 @@ const HomePage: React.FC<any> = () => {
         </Text>
       </Container>
       <ChipContainer>
-        <Chip label="Angular" onClick={() => linkToProject('typescript')} />
-        <Chip label="ReactJS" onClick={() => linkToProject('typescript')} />
-        <Chip label="VueJS" onClick={() => linkToProject('typescript')} />
-        <Chip label="C#" onClick={() => linkToProject('c%23')} />
-        <Chip label="Typescript" onClick={() => linkToProject('typescript')} />
-        <Chip label="NestJS" onClick={() => linkToProject('typescript')} />
-        <Chip label="Javascript" onClick={() => linkToProject('javascript')} />
+        <Chip label="Angular" onClick={() => linkToProjectType('typescript')} />
+        <Chip label="ReactJS" onClick={() => linkToProjectType('typescript')} />
+        <Chip label="VueJS" onClick={() => linkToProjectType('typescript')} />
+        <Chip label="C#" onClick={() => linkToProjectType('c%23')} />
+        <Chip label="Typescript" onClick={() => linkToProjectType('typescript')} />
+        <Chip label="NestJS" onClick={() => linkToProjectType('typescript')} />
+        <Chip label="Javascript" onClick={() => linkToProjectType('javascript')} />
+        <Chip label="This website!" onClick={linkToProject} />
       </ChipContainer>
     </>
   )
