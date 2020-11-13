@@ -11,7 +11,7 @@ function App() {
       <Header></Header>
       <BrowserRouter>
         <HomePage />
-      </BrowserRouter>, 
+      </BrowserRouter>
     </div>
   );
 }

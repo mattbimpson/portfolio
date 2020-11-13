@@ -1,12 +1,23 @@
 import React, { useState } from 'react';
-import { Container } from './HeaderComponentStyles';
+
+import './Styles.scss';
 
 const Header: React.FC<any> = () => {
   return (
     <>
-      <Container>
-        
-      </Container>
+      <div className="container">
+        <div className="nav">
+          <a href="/home">
+            Home
+          </a>
+          <a href="/work">
+            Work
+          </a>
+          <a href="/contact">
+            Contact
+          </a>
+        </div>
+      </div>
     </>
   )
 }

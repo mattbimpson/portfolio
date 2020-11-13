@@ -1,0 +1,22 @@
+@import "src/shared/styles/colors.scss";
+
+.container {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  background-color: #8499d2;
+
+  .nav {
+    display: inline-flex;
+    padding: 20px;
+    
+    a {
+      color: $dark-gray;
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+}
