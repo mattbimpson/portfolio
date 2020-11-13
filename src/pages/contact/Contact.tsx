@@ -9,7 +9,7 @@ const ContactPage: React.FC<any> = () => {
   return (
     <>
       <Container>
-      <HeaderText>Contact Me</HeaderText>
+      <HeaderText>contact me</HeaderText>
         <List>
           <li onClick={() => window.open(linkedIn, '_blank')}>
           {linkedIn}
