@@ -29,6 +29,8 @@ export const HeaderText =
 
 export const List =
     styled.ul`
+      color: rgba(255, 255, 255, 1);
+      font-weight: 500;
       list-style: none;
       padding: 0;
     `;

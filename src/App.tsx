@@ -1,24 +1,37 @@
-import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { Route, Switch, withRouter } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Container } from './App-Styles';
 import Header from './components/HeaderComponent';
 import HomePage from './pages/home/Home';
 import WorkPage from './pages/work/Work';
 import ContactPage from './pages/contact/Contact';
 
-function App() {
+const App: React.FC<any> = (props: any) => {
+
+  const { location } = props;
+
   return (
     <>
       <Header></Header>
       <Container>
-        <Switch>
-          <Route path="/" component={HomePage} exact />
-          <Route path="/work" component={WorkPage} />
-          <Route path="/contact" component={ContactPage} />
-        </Switch>
+        <TransitionGroup>
+          <CSSTransition
+            key={location.key}
+            timeout={{ enter: 1000, exit: 200 }}
+            classNames={'fade'}>
+            <Container>
+              <Switch location={location}>
+                <Route path="/" component={HomePage} exact />
+                <Route path="/work" component={WorkPage} />
+                <Route path="/contact" component={ContactPage} />
+              </Switch>
+            </Container>
+          </CSSTransition>
+        </TransitionGroup>
       </Container>
     </>
   );
 }
 
-export default App;
+export default withRouter(App);
