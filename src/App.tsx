@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { Container } from './App-Styles';
 import Header from './components/HeaderComponent';
 import HomePage from './pages/home/Home';
+import WorkPage from './pages/work/Work';
+import ContactPage from './pages/contact/Contact';
 
 function App() {
   return (
     <>
       <Header></Header>
       <Container>
-        
-        <BrowserRouter>
-          <HomePage />
-        </BrowserRouter>
+        <Switch>
+          <Route path="/" component={HomePage} exact />
+          <Route path="/work" component={WorkPage} />
+          <Route path="/contact" component={ContactPage} />
+        </Switch>
       </Container>
     </>
   );

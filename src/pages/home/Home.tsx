@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Chip from '@material-ui/core/Chip';
 import { Container, Text, HeaderText, ChipContainer } from './Styles';
 

@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
-import { Container, Link, Nav } from './Styles';
+import React from 'react';
+import { Container, Nav } from './Styles';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC<any> = () => {
   return (
     <>
       <Container>
         <Nav>
-          <Link href="/home">
+          <Link to="/">
             Home
           </Link>
-          <Link href="/work">
+          <Link to="/work">
             Work
           </Link>
-          <Link href="/contact">
+          <Link to="/contact">
             Contact
           </Link>
         </Nav>
