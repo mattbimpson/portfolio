@@ -1,21 +1,20 @@
 import React from 'react';
-import { Container, Nav } from './Styles';
-import { Link } from 'react-router-dom';
+import { Container, Nav, RouterLink } from './Styles';
 
 const Header: React.FC<any> = () => {
   return (
     <>
       <Container>
         <Nav>
-          <Link to="/">
+          <RouterLink to="/">
             Home
-          </Link>
-          <Link to="/work">
+          </RouterLink>
+          <RouterLink to="/work">
             Work
-          </Link>
-          <Link to="/contact">
+          </RouterLink>
+          <RouterLink to="/contact">
             Contact
-          </Link>
+          </RouterLink>
         </Nav>
       </Container>
     </>

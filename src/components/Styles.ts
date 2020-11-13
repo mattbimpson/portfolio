@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { DarkRed } from '../shared/styles/colors';
+import { Link } from 'react-router-dom';
 
 export const Container =
   styled.div`
@@ -21,7 +22,7 @@ export const Nav = styled.div`
   }
 `;
 
-export const Link = styled.a`
+export const RouterLink = styled(Link)`
   color: white;
   text-decoration: none;
   margin-right: 15px;
