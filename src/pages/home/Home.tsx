@@ -25,6 +25,7 @@ const HomePage: React.FC<any> = () => {
         <Chip label="C#" onClick={() => linkToProject('c%23')} />
         <Chip label="Typescript" onClick={() => linkToProject('typescript')} />
         <Chip label="NestJS" onClick={() => linkToProject('typescript')} />
+        <Chip label="Javascript" onClick={() => linkToProject('javascript')} />
       </ChipContainer>
     </>
   )
