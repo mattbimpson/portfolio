@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
-import { Container, Text, HeaderText } from './Styles';
+import Chip from '@material-ui/core/Chip';
+import { Container, Text, HeaderText, ChipContainer } from './Styles';
 
 const HomePage: React.FC<any> = () => {
+
+  function linkToProject(language: string): void {
+    window.open(`https://bitbucket.org/mbimpson/?language=${language}&sort=-updated_on`, '_blank');
+  }
+
   return (
     <>
       <Container>
@@ -12,6 +18,14 @@ const HomePage: React.FC<any> = () => {
           My core skills lie in Javascript frameworks such as Angular and React, and with C#.
         </Text>
       </Container>
+      <ChipContainer>
+        <Chip label="Angular" onClick={() => linkToProject('typescript')} />
+        <Chip label="ReactJS" onClick={() => linkToProject('typescript')} />
+        <Chip label="VueJS" onClick={() => linkToProject('typescript')} />
+        <Chip label="C#" onClick={() => linkToProject('c%23')} />
+        <Chip label="Typescript" onClick={() => linkToProject('typescript')} />
+        <Chip label="NestJS" onClick={() => linkToProject('typescript')} />
+      </ChipContainer>
     </>
   )
 }

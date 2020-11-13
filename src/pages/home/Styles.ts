@@ -25,3 +25,9 @@ export const HeaderText =
     font-size: 24px;
     font-weight: bold;
   `;
+
+export const ChipContainer =
+    styled(Container)`
+      display: flex;
+      justify-content: space-between;
+    `;
