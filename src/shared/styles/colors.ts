@@ -1,4 +1,4 @@
-export const DarkRed = '#900C3F';
+export const DarkRed = '#2D0303';
 export const Red = '#C70039';
 export const Orange = '#FF5733';
 export const Yellow = '#FFC300';
