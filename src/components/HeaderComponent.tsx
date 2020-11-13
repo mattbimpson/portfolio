@@ -7,13 +7,13 @@ const Header: React.FC<any> = () => {
       <Container>
         <Nav>
           <RouterLink to="/">
-            Home
+            home
           </RouterLink>
           {/* <RouterLink to="/work">
             Work
           </RouterLink> */}
           <RouterLink to="/contact">
-            Contact
+            contact
           </RouterLink>
         </Nav>
       </Container>
