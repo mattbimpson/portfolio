@@ -9,9 +9,9 @@ const Header: React.FC<any> = () => {
           <RouterLink to="/">
             Home
           </RouterLink>
-          <RouterLink to="/work">
+          {/* <RouterLink to="/work">
             Work
-          </RouterLink>
+          </RouterLink> */}
           <RouterLink to="/contact">
             Contact
           </RouterLink>
