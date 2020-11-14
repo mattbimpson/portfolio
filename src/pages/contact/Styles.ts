@@ -33,4 +33,5 @@ export const List =
       font-weight: 500;
       list-style: none;
       padding: 0;
+      cursor: pointer;
     `;
