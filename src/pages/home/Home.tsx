@@ -45,6 +45,7 @@ const HomePage: React.FC<any> = () => {
         <Chip label="NestJS" onClick={() => linkToProject('https://bitbucket.org/mbimpson/nestjs-tutorial/src/master/README.md')} />
         <Chip label="Javascript" onClick={() => linkToProjectType('javascript')} />
         <Chip label="Python" onClick={() => linkToProject('https://bitbucket.org/mbimpson/python-api/src/master/README.md')} />
+        <Chip label="Android" onClick={() => linkToProject('https://bitbucket.org/mbimpson/myweather/src/master/')} />
         <Chip label="This website!" onClick={() => linkToProject('https://bitbucket.org/mbimpson/mattbimpson/src/master/README.md')} />
       </ChipContainer>
     </>
