@@ -38,7 +38,7 @@ const HomePage: React.FC<any> = () => {
         <Chip label="ReactJS" onClick={() => linkToProject(`${bitBucket}forms-validation-in-react/src/master/`)} />
         <Chip label="VueJS" onClick={() => linkToProject(`${bitBucket}todo-vue/src/master/README.md`)} />
         <Chip label="C#" onClick={() => linkToProject(`${bitBucket}asp.net-middleware/src/master/README.md`)} />
-        <Chip label="Typescript" onClick={() => linkToProject(`${bitBucket}connect4/src/master/`)} />
+        <Chip label="C++" onClick={() => linkToProject(`${bitBucket}connect4/src/master/`)} />
         <Chip label="NestJS" onClick={() => linkToProject(`${bitBucket}nestjs-tutorial/src/master/README.md`)} />
         <Chip label="Python" onClick={() => linkToProject(`${bitBucket}python-api/src/master/README.md`)} />
         <Chip label="Android" onClick={() => linkToProject(`${bitBucket}myweather/src/master/`)} />
