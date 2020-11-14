@@ -17,10 +17,7 @@ const useStyles = makeStyles((theme) => ({
 const HomePage: React.FC<any> = () => {
 
   const classes = useStyles();
-
-  function linkToProjectType(language: string): void {
-    window.open(`https://bitbucket.org/mbimpson/?language=${language}&sort=-updated_on`, '_blank');
-  }
+  const bitBucket = 'https://bitbucket.org/mbimpson/';
 
   function linkToProject(url: string): void {
     window.open(url, '_blank');
@@ -37,16 +34,15 @@ const HomePage: React.FC<any> = () => {
         </Text>
       </Container>
       <ChipContainer className={classes.root}>
-        <Chip label="Angular" onClick={() => linkToProject('https://bitbucket.org/mbimpson/ngrx-entity/src/master/ngrx-entity/README.md')} />
-        <Chip label="ReactJS" onClick={() => linkToProject('https://bitbucket.org/mbimpson/forms-validation-in-react/src/master/')} />
-        <Chip label="VueJS" onClick={() => linkToProject('https://bitbucket.org/mbimpson/todo-vue/src/master/README.md')} />
-        <Chip label="C#" onClick={() => linkToProject('https://bitbucket.org/mbimpson/asp.net-middleware/src/master/README.md')} />
-        <Chip label="Typescript" onClick={() => linkToProjectType('typescript')} />
-        <Chip label="NestJS" onClick={() => linkToProject('https://bitbucket.org/mbimpson/nestjs-tutorial/src/master/README.md')} />
-        <Chip label="Javascript" onClick={() => linkToProjectType('javascript')} />
-        <Chip label="Python" onClick={() => linkToProject('https://bitbucket.org/mbimpson/python-api/src/master/README.md')} />
-        <Chip label="Android" onClick={() => linkToProject('https://bitbucket.org/mbimpson/myweather/src/master/')} />
-        <Chip label="This website!" onClick={() => linkToProject('https://bitbucket.org/mbimpson/mattbimpson/src/master/README.md')} />
+        <Chip label="Angular" onClick={() => linkToProject(`${bitBucket}ngrx-entity/src/master/ngrx-entity/README.md`)} />
+        <Chip label="ReactJS" onClick={() => linkToProject(`${bitBucket}forms-validation-in-react/src/master/`)} />
+        <Chip label="VueJS" onClick={() => linkToProject(`${bitBucket}todo-vue/src/master/README.md`)} />
+        <Chip label="C#" onClick={() => linkToProject(`${bitBucket}asp.net-middleware/src/master/README.md`)} />
+        <Chip label="Typescript" onClick={() => linkToProject(`${bitBucket}connect4/src/master/`)} />
+        <Chip label="NestJS" onClick={() => linkToProject(`${bitBucket}nestjs-tutorial/src/master/README.md`)} />
+        <Chip label="Python" onClick={() => linkToProject(`${bitBucket}python-api/src/master/README.md`)} />
+        <Chip label="Android" onClick={() => linkToProject(`${bitBucket}myweather/src/master/`)} />
+        <Chip label="This website!" onClick={() => linkToProject(`${bitBucket}mattbimpson/src/master/README.md`)} />
       </ChipContainer>
     </>
   )
