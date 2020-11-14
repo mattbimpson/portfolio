@@ -7,18 +7,21 @@ export const Container =
     position: sticky;
     top: 0;
     background-color: ${DarkRed};
+    display: flex;
   `;
 
 export const Nav = styled.div`
   display: inline-flex;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 30px;
+  width: 800px;
 
   @media (max-width: 780px) {
     margin-left: 20px;
     margin-right: 0px;
+    padding-left: 0;
   }
 `;
 
