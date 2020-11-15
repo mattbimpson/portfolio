@@ -20,6 +20,7 @@ export interface CarouselItem {
   title: string;
   description: string;
   image: string;
+  url: string;
 }
 
 export interface CarouselProps {
@@ -60,6 +61,10 @@ const Carousel: React.FC<CarouselProps> = (props) => {
     }
   }
 
+  function goToProject(url: string): void {
+    window.open(url, '_blank');
+  }
+
   return (
     <>
       <Container>
@@ -68,7 +73,7 @@ const Carousel: React.FC<CarouselProps> = (props) => {
           <Slider {...settings}>
             {
               items.map((x, i) =>
-                <ItemContainer key={i}>
+                <ItemContainer key={i} onClick={() => goToProject(x.url)}>
                   <ImageContainer>
                     <Image src={getImageSrc(x.image)} />
                   </ImageContainer>
