@@ -26,6 +26,7 @@ export const ItemContainer =
 
 export const ImageContainer =
   styled.div`
+    display: inline-table;
     height: 250px;
     width: 250px;
     background-color: white;
@@ -34,8 +35,8 @@ export const ImageContainer =
   `;
 export const Image =
   styled.img`
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
   `;
 
 export const TextContainer =
