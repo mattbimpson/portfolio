@@ -2,6 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import '@testing-library/jest-dom'
 
 test('renders text in home component', () => {
   render(
@@ -11,6 +12,6 @@ test('renders text in home component', () => {
       </BrowserRouter>
     </>
   );
-  const linkElement = screen.getByText(/mattbimpson.uk/i);
+  const linkElement = screen.getByText('matt bimpson');
   expect(linkElement).toBeInTheDocument();
 });
