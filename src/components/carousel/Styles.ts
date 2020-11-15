@@ -10,18 +10,16 @@ export const Container =
 
 export const CarouselContainer =
   styled.div`
-    display: flex;
-    justify-content: space-between;
     padding: 20px;
-    align-items: center;
   `;
 
-export interface ItemContainerProps {
-  selected?: boolean;
-}
 export const ItemContainer =
-  styled.div<ItemContainerProps>`
-    height: ${(props) => (props.selected ? '250px' : '200px')};
-    width: ${(props) => (props.selected ? '300px' : '250px')};
-    background-color: ${(props) => (props.selected ? 'white' : 'rgba(0, 0, 0, 0.7)')};
+  styled.div`
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+    margin-left: 20px;
+    color: white;
+    font-weight: 500;
+    outline: none;
   `;

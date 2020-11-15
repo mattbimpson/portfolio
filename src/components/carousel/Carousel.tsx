@@ -1,45 +1,45 @@
-import React, {useState} from 'react';
-import { ArrowBackIos, ArrowForwardIos } from '@material-ui/icons';
+import React from 'react';
+import Slider from 'react-slick';
 import { CarouselContainer, ItemContainer } from './Styles';
 import { Container, HeaderText } from '../../shared/styles/Styles';
 
-const Carousel: React.FC<any> = (props) => {
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-  const [selectedItem, setSelectedItem] = useState(0);
-  const {title} = props;
+export interface CarouselItem {
+  title: string;
+  description: string;
+}
 
-  const arrowStyle = {
-    fill: 'white',
-    cursor: 'pointer'
+export interface CarouselProps {
+  title: string;
+  items: CarouselItem[];
+}
+
+const Carousel: React.FC<CarouselProps> = (props) => {
+
+  const {title, items} = props;
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
   };
-
-  const items = [
-    { title: 'title', description: 'test thing' },
-    { title: 'title 2', description: 'test thing 2' },
-    { title: 'title 3', description: 'test thing 3' },
-    { title: 'title 4', description: 'test thing 4' }
-  ];
-
-  function selectNext() {
-    setSelectedItem(selectedItem + 1);
-  }
-
-  function selectPrev() {
-    setSelectedItem(selectedItem - 1);
-  }
 
   return (
     <>
       <Container>
         <HeaderText>{title}</HeaderText>
         <CarouselContainer>
-          <ArrowBackIos style={arrowStyle} onClick={selectPrev} />
+          <Slider {...settings}>
             {
               items.map((x, i) =>
-                <ItemContainer key={i} selected={i === selectedItem}>{x.title} {x.description}</ItemContainer>
+                <ItemContainer key={i}>{x.title} {x.description}</ItemContainer>
               )
             }
-          <ArrowForwardIos style={arrowStyle} onClick={selectNext} />
+          </Slider>
         </CarouselContainer>
       </Container>
     </>

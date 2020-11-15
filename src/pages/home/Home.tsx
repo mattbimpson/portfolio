@@ -26,6 +26,18 @@ const HomePage: React.FC<any> = () => {
     window.open(url, '_blank');
   }
 
+  const items = [
+    { title: 'Ngrx Entity', description: 'A demonstration of state normalisation using the ngrx entity package.' },
+    { title: 'React forms validation', description: 'How to use React hooks to simplify forms validation.' },
+    { title: 'Vue Todo', description: 'A simple todo app, in VueJS using VueX state management.' },
+    { title: 'ASP.NET middleware', description: 'A dotnet core webapi with middleware to perform custom logic within the request pipeline.' },
+    { title: 'Connect4!', description: 'A game of connect 4 written in C++.' },
+    { title: 'NestJS Api', description: 'A REST API written in NestJS. Angular for the backend!' },
+    { title: 'Python', description: 'My first Python API using Flask.' },
+    { title: 'Android', description: 'An android weather app written using Kotlin.' },
+    { title: 'This website', description: 'This website, powered by ReactJS :)' }
+  ];
+
   return (
     <>
       <Container>
@@ -47,7 +59,7 @@ const HomePage: React.FC<any> = () => {
         <Chip label="Android" onClick={() => linkToProject(`${bitBucket}myweather/src/master/`)} />
         <Chip label="This website!" onClick={() => linkToProject(`${bitBucket}mattbimpson/src/master/README.md`)} />
       </ChipContainer>
-      <Carousel title="Some of my work:" />
+      <Carousel title="Some projects:" items={items} />
     </>
   )
 }
