@@ -2,9 +2,8 @@ import React from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Container } from './App-Styles';
-import Header from './components/HeaderComponent';
+import Header from './components/header/HeaderComponent';
 import HomePage from './pages/home/Home';
-import WorkPage from './pages/work/Work';
 import ContactPage from './pages/contact/Contact';
 
 const App: React.FC<any> = (props: any) => {
@@ -23,7 +22,6 @@ const App: React.FC<any> = (props: any) => {
             <Container>
               <Switch location={location}>
                 <Route path="/" component={HomePage} exact />
-                <Route path="/work" component={WorkPage} />
                 <Route path="/contact" component={ContactPage} />
               </Switch>
             </Container>
