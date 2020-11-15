@@ -1,7 +1,10 @@
 import React from 'react';
 import Chip from '@material-ui/core/Chip';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Text, HeaderText, ChipContainer } from './Styles';
+import { Container } from '../../shared/styles/Styles';
+import { ChipContainer } from './Styles';
+import { Text, HeaderText } from '../../shared/styles/Styles';
+import Carousel from '../../components/carousel/Carousel';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,6 +47,7 @@ const HomePage: React.FC<any> = () => {
         <Chip label="Android" onClick={() => linkToProject(`${bitBucket}myweather/src/master/`)} />
         <Chip label="This website!" onClick={() => linkToProject(`${bitBucket}mattbimpson/src/master/README.md`)} />
       </ChipContainer>
+      <Carousel title="Some of my work:" />
     </>
   )
 }
