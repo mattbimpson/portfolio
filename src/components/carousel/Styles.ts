@@ -23,3 +23,17 @@ export const ItemContainer =
     font-weight: 500;
     outline: none;
   `;
+
+export const ImageContainer =
+  styled.div`
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    -webkit-clip-path: polygon(0 0, 0 100px, 100px 0, 100px 0);
+    clip-path: polygon(0 0, 0 100px, 100px 0, 100px 0);
+  `;
+export const Image =
+  styled.img`
+    height: 80px;
+    width: 80px;
+  `;

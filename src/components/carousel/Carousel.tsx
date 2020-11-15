@@ -1,14 +1,17 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { CarouselContainer, ItemContainer } from './Styles';
+import { CarouselContainer, ItemContainer, ImageContainer, Image } from './Styles';
 import { Container, HeaderText } from '../../shared/styles/Styles';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import angular from '../../assets/images/angular.webp';
+
 export interface CarouselItem {
   title: string;
   description: string;
+  image?: string;
 }
 
 export interface CarouselProps {
@@ -36,7 +39,12 @@ const Carousel: React.FC<CarouselProps> = (props) => {
           <Slider {...settings}>
             {
               items.map((x, i) =>
-                <ItemContainer key={i}>{x.title} {x.description}</ItemContainer>
+                <ItemContainer key={i}>
+                  <ImageContainer>
+                    <Image src={angular} />
+                  </ImageContainer>
+                  {x.title}: {x.description}
+                </ItemContainer>
               )
             }
           </Slider>
