@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DarkRed } from "../../shared/styles/colors";
 
 export const Container =
   styled.div`
@@ -20,7 +21,6 @@ export const ItemContainer =
     font-weight: 500;
     outline: none;
     display: flex !important;
-    cursor: pointer;
   `;
 
 export const ImageContainer =
@@ -61,8 +61,12 @@ export const TextContainer =
 
 export const LinkButton =
   styled.button`
-    border-radius: 5px;
     height: 45px;
     margin-top: 30px;
     padding: 10px;
+    cursor: pointer;
+    outline: none;
+    color: ${DarkRed};
+    background-color: white;
+    font-weight: 500;
   `;

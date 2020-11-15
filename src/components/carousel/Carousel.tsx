@@ -73,14 +73,14 @@ const Carousel: React.FC<CarouselProps> = (props) => {
           <Slider {...settings}>
             {
               items.map((x, i) =>
-                <ItemContainer key={i} onClick={() => goToProject(x.url)}>
+                <ItemContainer key={i}>
                   <ImageContainer>
                     <Image src={getImageSrc(x.image)} />
                   </ImageContainer>
                   <TextContainer>
                     {x.title}: {x.description}
                     <br/>
-                    <LinkButton>
+                    <LinkButton onClick={() => goToProject(x.url)}>
                       View project on BitBucket
                     </LinkButton>
                   </TextContainer>
