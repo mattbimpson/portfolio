@@ -20,7 +20,6 @@ export const ItemContainer =
     color: white;
     font-weight: 500;
     outline: none;
-
     display: flex !important;
   `;
 

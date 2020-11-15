@@ -12,7 +12,7 @@ import android from '../../assets/images/android.webp';
 import cpp from '../../assets/images/cpp.png';
 import csharp from '../../assets/images/csharp.png';
 import nest from '../../assets/images/nest.png';
-import python from '../../assets/images/python.jpeg';
+import python from '../../assets/images/python.png';
 import react from '../../assets/images/react.png';
 import vue from '../../assets/images/vue.webp';
 
