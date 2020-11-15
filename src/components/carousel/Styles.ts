@@ -16,7 +16,6 @@ export const ItemContainer =
   styled.div`
     height: 300px;
     width: 300px;
-    margin-left: 20px;
     color: white;
     font-weight: 500;
     outline: none;
