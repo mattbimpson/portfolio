@@ -32,7 +32,7 @@ const HomePage: React.FC<any> = () => {
       url: `${bitBucket}asp.net-middleware/src/master/README.md`
     },
     {
-      title: 'Connect4!',
+      title: 'Connect4',
       description: 'A game of connect 4 written in C++.',
       image: 'cpp',
       url: `${bitBucket}connect4/src/master/`
@@ -73,7 +73,7 @@ const HomePage: React.FC<any> = () => {
           My core skills lie in Javascript frameworks such as Angular and React, and with C#.
         </Text>
       </Container>
-      <Carousel title="Some projects:" items={items} />
+      <Carousel title="some projects" items={items} />
     </>
   )
 }
