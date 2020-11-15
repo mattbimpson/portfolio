@@ -51,13 +51,13 @@ const HomePage: React.FC<any> = () => {
     },
     {
       title: 'Android',
-      description: 'An android weather app written using Kotlin.',
+      description: 'A weather app written using Kotlin.',
       image: 'android',
       url: `${bitBucket}myweather/src/master/`
     },
     {
       title: 'This website',
-      description: 'This website, powered by ReactJS :)',
+      description: 'This Site, powered by ReactJS :)',
       image: 'react',
       url: `${bitBucket}mattbimpson/src/master/README.md`
     }
