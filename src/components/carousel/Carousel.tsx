@@ -18,7 +18,7 @@ const Carousel: React.FC<any> = (props) => {
         <HeaderText>{title}</HeaderText>
         <CarouselContainer>
           <ArrowBackIos style={arrowStyle} />
-
+            
           <ArrowForwardIos style={arrowStyle} />
         </CarouselContainer>
       </Container>
