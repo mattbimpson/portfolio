@@ -26,7 +26,7 @@ const HomePage: React.FC<any> = () => {
   return (
     <>
       <Container>
-        <HeaderText>mattbimpson</HeaderText>
+        <HeaderText>matt bimpson</HeaderText>
         <Text>
           Hello, my name is Matt and I'm a Colombia based software developer from the UK. 
           I have worked in development for around 10 years now, staying 'full stack' where I can. 
