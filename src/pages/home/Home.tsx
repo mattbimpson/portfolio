@@ -57,7 +57,7 @@ const HomePage: React.FC<any> = () => {
     },
     {
       title: 'This website',
-      description: 'This Site, powered by ReactJS :)',
+      description: 'This site, powered by ReactJS :)',
       image: 'react',
       url: `${bitBucket}mattbimpson/src/master/README.md`
     }
