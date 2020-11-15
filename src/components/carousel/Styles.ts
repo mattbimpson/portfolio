@@ -32,16 +32,32 @@ export const ImageContainer =
     background-color: white;
     -webkit-clip-path: polygon(0 0, 0 250px, 250px 0, 250px 0);
     clip-path: polygon(0 0, 0 250px, 250px 0, 250px 0);
+
+    @media screen and (max-width: 780px) {
+      height: 100px;
+      width: 100px;
+      -webkit-clip-path: polygon(0 0, 0 100px, 100px 0, 100px 0);
+      clip-path: polygon(0 0, 0 100px, 100px 0, 100px 0);
+    }
   `;
 export const Image =
   styled.img`
     height: 150px;
     width: 150px;
+
+    @media screen and (max-width: 780px) {
+      height: 70px;
+      width: 70px;
+    }
   `;
 
 export const TextContainer =
   styled.div`
     margin: 50px;
+
+    @media screen and (max-width: 780px) {
+      margin: 10px;
+    }
   `;
 
 export const LinkButton =
