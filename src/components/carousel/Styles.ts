@@ -10,30 +10,35 @@ export const Container =
 
 export const CarouselContainer =
   styled.div`
-    padding: 20px;
   `;
 
 export const ItemContainer =
   styled.div`
-    height: 200px;
+    height: 300px;
     width: 300px;
-    padding: 20px;
     margin-left: 20px;
     color: white;
     font-weight: 500;
     outline: none;
+
+    display: flex !important;
   `;
 
 export const ImageContainer =
   styled.div`
-    height: 100px;
-    width: 100px;
+    height: 250px;
+    width: 250px;
     background-color: white;
-    -webkit-clip-path: polygon(0 0, 0 100px, 100px 0, 100px 0);
-    clip-path: polygon(0 0, 0 100px, 100px 0, 100px 0);
+    -webkit-clip-path: polygon(0 0, 0 250px, 250px 0, 250px 0);
+    clip-path: polygon(0 0, 0 250px, 250px 0, 250px 0);
   `;
 export const Image =
   styled.img`
-    height: 80px;
-    width: 80px;
+    height: 250px;
+    width: 250px;
+  `;
+
+export const TextContainer =
+  styled.div`
+    margin: 50px;
   `;

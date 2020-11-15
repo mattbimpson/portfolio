@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { CarouselContainer, ItemContainer, ImageContainer, Image } from './Styles';
+import { CarouselContainer, ItemContainer, ImageContainer, Image, TextContainer } from './Styles';
 import { Container, HeaderText } from '../../shared/styles/Styles';
 
 import "slick-carousel/slick/slick.css";
@@ -43,7 +43,9 @@ const Carousel: React.FC<CarouselProps> = (props) => {
                   <ImageContainer>
                     <Image src={angular} />
                   </ImageContainer>
-                  {x.title}: {x.description}
+                  <TextContainer>
+                    {x.title}: {x.description}
+                  </TextContainer>
                 </ItemContainer>
               )
             }
