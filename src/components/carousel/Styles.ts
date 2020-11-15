@@ -21,6 +21,7 @@ export const ItemContainer =
     font-weight: 500;
     outline: none;
     display: flex !important;
+    cursor: pointer;
   `;
 
 export const ImageContainer =
@@ -41,4 +42,12 @@ export const Image =
 export const TextContainer =
   styled.div`
     margin: 50px;
+  `;
+
+export const LinkButton =
+  styled.button`
+    border-radius: 5px;
+    height: 45px;
+    margin-top: 30px;
+    padding: 10px;
   `;
