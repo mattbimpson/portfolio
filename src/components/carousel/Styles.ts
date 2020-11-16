@@ -11,6 +11,7 @@ export const Container =
 
 export const CarouselContainer =
   styled.div`
+    margin-bottom: 20px;
   `;
 
 export const ItemContainer =
