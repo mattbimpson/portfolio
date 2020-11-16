@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-import Button from '@material-ui/core/Button';
-import { withStyles } from '@material-ui/core/styles';
-import { Secondary } from '../../shared/styles/colors';
+import { Secondary, Primary } from '../../shared/styles/colors';
 
 export const Container =
   styled.div`
@@ -61,20 +59,21 @@ export const TextContainer =
     }
   `;
 
-export const LinkButton = withStyles({
-  root: {
-    background: `${Secondary}`,
-    borderRadius: 3,
-    border: 0,
-    color: 'white',
-    height: 40,
-    marginTop: '20px',
-    padding: '0 30px',
-    '&:hover': {
-      background: `${Secondary}`
+export const LinkButton =
+  styled.button`
+    height: 45px;
+    width: 200px;
+    margin-top: 30px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    color: ${Primary};
+    background-color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+      font-weight: bold;
     }
-  },
-  label: {
-    textTransform: 'capitalize',
-  },
-})(Button);
+  `;

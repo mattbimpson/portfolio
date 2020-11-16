@@ -84,8 +84,7 @@ const Carousel: React.FC<CarouselProps> = (props) => {
                     {x.title}: {x.description}
                     <br/>
                     <LinkButton
-                      onClick={() => goToProject(x.url)}
-                      variant="contained" color="secondary">
+                      onClick={() => goToProject(x.url)} >
                       View project on BitBucket
                     </LinkButton>
                   </TextContainer>
