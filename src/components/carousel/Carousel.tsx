@@ -7,15 +7,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Todo: figure out how to use require() in the carousel directly so don't need to import here
-import angular from '../../assets/images/angular.webp';
-import android from '../../assets/images/android.webp';
-import cpp from '../../assets/images/cpp.png';
-import csharp from '../../assets/images/csharp.png';
-import nest from '../../assets/images/nest.png';
-import node from '../../assets/images/node.webp';
-import python from '../../assets/images/python.png';
-import react from '../../assets/images/react.png';
-import vue from '../../assets/images/vue.webp';
+import angular from '../../assets/images/angular.png';
+import android from '../../assets/images/android.png';
+import cpp from '../../assets/images/cpp.jpeg';
+import csharp from '../../assets/images/csharp.jpeg';
+import nest from '../../assets/images/nest.jpeg';
+import node from '../../assets/images/node.png';
+import python from '../../assets/images/python.jpeg';
+import react from '../../assets/images/react.jpg';
+import vue from '../../assets/images/vue.png';
 
 export interface CarouselItem {
   title: string;
