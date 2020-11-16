@@ -8,6 +8,7 @@ export const Container =
     top: 0;
     background-color: ${Primary};
     display: flex;
+    z-index: 9999;
   `;
 
 export const Nav = styled.div`
