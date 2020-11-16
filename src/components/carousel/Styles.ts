@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Secondary, Primary } from '../../shared/styles/colors';
+import { Primary } from '../../shared/styles/colors';
 
 export const Container =
   styled.div`
