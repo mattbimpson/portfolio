@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DarkRed } from "../../shared/styles/colors";
+import { Primary } from "../../shared/styles/colors";
 
 export const Container =
   styled.div`
@@ -66,7 +66,7 @@ export const LinkButton =
     padding: 10px;
     cursor: pointer;
     outline: none;
-    color: ${DarkRed};
+    color: ${Primary};
     background-color: white;
     font-weight: 500;
   `;

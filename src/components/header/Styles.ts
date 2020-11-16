@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { DarkRed } from '../../shared/styles/colors';
+import { Primary } from '../../shared/styles/colors';
 import { Link } from 'react-router-dom';
 
 export const Container =
   styled.div`
     position: sticky;
     top: 0;
-    background-color: ${DarkRed};
+    background-color: ${Primary};
     display: flex;
   `;
 

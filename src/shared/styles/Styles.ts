@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { Primary } from "./colors";
 
 export const Container =
   styled.div`
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: ${Primary};
     padding: 20px;
     width: 800px;
     margin: 0 auto;
@@ -17,7 +18,7 @@ export const Container =
 
 export const Text =
   styled.p`
-    color: rgba(255, 255, 255, 1);
+    color: white;
     font-weight: 500;
   `;
 

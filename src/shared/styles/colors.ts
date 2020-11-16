@@ -1,5 +1,6 @@
-export const DarkRed = '#2D0303';
-export const Red = '#C70039';
-export const Orange = '#FF5733';
-export const Yellow = '#FFC300';
-export const LightYellow = '#FFF6CF';
+export const Primary = '#5A5A5A';
+export const Secondary = '#9A9A9A';
+export const Tertiary = '#D4D4D4';
+export const DarkPurple = '#3b1f2b';
+export const Red = '#c73e1d';
+export const Background = '#D1BCBC';

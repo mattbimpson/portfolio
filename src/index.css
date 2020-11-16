@@ -3,13 +3,8 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('./assets/images/circuit-board-2.jpeg');
-}
-
-@media screen and (max-width: 780px) {
-  body {
-    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('./assets/images/circuit-board-2-mobile.jpeg');
-  }
+  background-image: url('./assets/images/background.jpeg');
+  background-size: cover;
 }
 
 code {
