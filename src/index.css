@@ -3,7 +3,7 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./assets/images/background.jpeg');
+  background-image: url('./assets/images/background.jpg');
   background-size: cover;
 }
 
