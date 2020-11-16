@@ -12,7 +12,7 @@ export const Container =
 
     @media (max-width: 780px) {
       width: 100%;
-      margin-top: 0px;
+      margin-top: -5px;
     }
   `;
 
