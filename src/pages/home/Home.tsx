@@ -44,16 +44,22 @@ const HomePage: React.FC<any> = () => {
       url: `${bitBucket}nestjs-tutorial/src/master/README.md`
     },
     {
-      title: 'Python',
+      title: 'Python API',
       description: 'My first Python API using Flask.',
       image: 'python',
       url: `${bitBucket}python-api/src/master/README.md`
     },
     {
-      title: 'Android',
+      title: 'MyWeather',
       description: 'A weather app written using Kotlin.',
       image: 'android',
       url: `${bitBucket}myweather/src/master/`
+    },
+    {
+      title: 'ChitChat',
+      description: 'A NodeJS real-time chat application using Socket.IO',
+      image: 'node',
+      url: `${bitBucket}chitchat/src/master/`
     },
     {
       title: 'This website',

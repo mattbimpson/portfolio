@@ -12,6 +12,7 @@ import android from '../../assets/images/android.webp';
 import cpp from '../../assets/images/cpp.png';
 import csharp from '../../assets/images/csharp.png';
 import nest from '../../assets/images/nest.png';
+import node from '../../assets/images/node.webp';
 import python from '../../assets/images/python.png';
 import react from '../../assets/images/react.png';
 import vue from '../../assets/images/vue.webp';
@@ -52,6 +53,8 @@ const Carousel: React.FC<CarouselProps> = (props) => {
         return csharp;
       case 'nest':
         return nest;
+      case 'node':
+        return node;
       case 'python':
         return python;
       case 'react':
