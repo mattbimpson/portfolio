@@ -16,6 +16,7 @@ import node from '../../assets/images/node.png';
 import python from '../../assets/images/python.jpeg';
 import react from '../../assets/images/react.jpg';
 import vue from '../../assets/images/vue.png';
+import kube from '../../assets/images/kubernetes.png';
 
 export interface CarouselItem {
   title: string;
@@ -61,6 +62,8 @@ const Carousel: React.FC<CarouselProps> = (props) => {
         return react;
       case 'vue':
         return vue;
+      case 'kube':
+        return kube;
     }
   }
 

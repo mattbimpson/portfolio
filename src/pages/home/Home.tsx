@@ -50,6 +50,12 @@ const HomePage: React.FC<any> = () => {
       url: `${bitBucket}python-api/src/master/README.md`
     },
     {
+      title: 'Kubernetes Tutorial',
+      description: 'A tutorial on running local Kubernetes with MicroK8s',
+      image: 'kube',
+      url: `${bitBucket}kubernetes-tutorial/src/master/creating-a-deployment.md`
+    },
+    {
       title: 'MyWeather',
       description: 'A weather app written using Kotlin.',
       image: 'android',
