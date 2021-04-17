@@ -9,6 +9,7 @@ export const Container =
     margin: 0 auto;
     margin-top: 30px;
     box-sizing: border-box;
+    border-radius: 5px;
 
     @media (max-width: 780px) {
       width: 100%;

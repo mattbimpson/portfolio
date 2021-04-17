@@ -44,12 +44,6 @@ const HomePage: React.FC<any> = () => {
       url: `${bitBucket}nestjs-tutorial/src/master/README.md`
     },
     {
-      title: 'Python API',
-      description: 'My first Python API using Flask.',
-      image: 'python',
-      url: `${bitBucket}python-api/src/master/README.md`
-    },
-    {
       title: 'Kubernetes Tutorial',
       description: 'A tutorial on running local Kubernetes with MicroK8s',
       image: 'kube',
