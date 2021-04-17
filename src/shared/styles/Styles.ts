@@ -28,3 +28,12 @@ export const HeaderText =
     font-size: 24px;
     font-weight: bold;
   `;
+
+export const List =
+  styled.ul`
+    color: white;
+    font-weight: 500;
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+  `;

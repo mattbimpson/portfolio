@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, HeaderText, List } from './Styles';
+import { Container, HeaderText, List } from '../../shared/styles/Styles';
 
 const ContactPage: React.FC<any> = () => {
 
