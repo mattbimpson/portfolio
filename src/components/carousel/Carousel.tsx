@@ -71,6 +71,14 @@ const Carousel: React.FC<CarouselProps> = (props) => {
     window.open(url, '_blank');
   }
 
+  function isBitBucket(url: string): boolean {
+    if (url && url.toLowerCase().includes('bitbucket')) {
+      return true;
+    }
+
+    return false;
+  }
+
   return (
     <>
       <Container>
@@ -87,7 +95,10 @@ const Carousel: React.FC<CarouselProps> = (props) => {
                     {x.title}: {x.description}
                     <br/>
                     <LinkButton onClick={() => goToProject(x.url)}>
-                      View project on BitBucket
+                      View project
+                      {
+                        isBitBucket(x.url) && <span> on BitBucket</span>
+                      } 
                     </LinkButton>
                   </TextContainer>
                 </ItemContainer>

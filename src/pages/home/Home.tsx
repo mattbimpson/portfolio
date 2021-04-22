@@ -9,15 +9,16 @@ const HomePage: React.FC<any> = () => {
 
   const items = [
     {
-      title: 'Ngrx Entity',
-      description: 'A demonstration of state normalisation using the ngrx entity package.',
-      image: 'angular',
-      url: `${bitBucket}ngrx-entity/src/master/ngrx-entity/README.md` },
-    {
       title: 'React forms validation',
       description: 'How to use React hooks to simplify forms validation.',
       image: 'react',
       url: `${bitBucket}forms-validation-in-react/src/master/`
+    },
+    {
+      title: 'Ngrx Entity',
+      description: 'A demonstration of state normalisation using the ngrx entity package.',
+      image: 'angular',
+      url: `${bitBucket}ngrx-entity/src/master/ngrx-entity/README.md`
     },
     {
       title: 'Vue Todo',
@@ -66,6 +67,12 @@ const HomePage: React.FC<any> = () => {
       description: 'This site, powered by ReactJS :)',
       image: 'react',
       url: `${bitBucket}mattbimpson/src/master/README.md`
+    },
+    {
+      title: 'Recipes App',
+      description: 'A recipes catalog/sharing app, made in Vue JS',
+      image: 'vue',
+      url: 'https://mattsrecipes.surge.sh'
     }
   ];
 
