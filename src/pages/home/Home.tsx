@@ -9,6 +9,12 @@ const HomePage: React.FC<any> = () => {
 
   const items = [
     {
+      title: 'Recipes App',
+      description: 'A recipes catalog/sharing app, made in Vue JS',
+      image: 'vue',
+      url: 'https://mattsrecipes.surge.sh'
+    },
+    {
       title: 'React forms validation',
       description: 'How to use React hooks to simplify forms validation.',
       image: 'react',
@@ -67,12 +73,6 @@ const HomePage: React.FC<any> = () => {
       description: 'This site, powered by ReactJS :)',
       image: 'react',
       url: `${bitBucket}mattbimpson/src/master/README.md`
-    },
-    {
-      title: 'Recipes App',
-      description: 'A recipes catalog/sharing app, made in Vue JS',
-      image: 'vue',
-      url: 'https://mattsrecipes.surge.sh'
     }
   ];
 
