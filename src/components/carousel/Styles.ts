@@ -63,7 +63,7 @@ export const TextContainer =
 export const LinkButton =
   styled.button`
     height: 45px;
-    width: 200px;
+    width: 120px;
     margin-top: 30px;
     padding: 10px;
     cursor: pointer;
