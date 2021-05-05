@@ -43,15 +43,3 @@ code {
 * {
   font-family: 'Dosis';
 }
-
-.slick-prev {
-  margin-left: 50px;
-  margin-top: 90px;
-  z-index: 9999;
-}
-
-.slick-next {
-  margin-right: 50px;
-  margin-top: 80px;
-  z-index: 9999;
-}

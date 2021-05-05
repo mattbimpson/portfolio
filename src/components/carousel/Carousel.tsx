@@ -39,7 +39,8 @@ const Carousel: React.FC<CarouselProps> = (props) => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    arrows: false
   };
 
   function getImageSrc(key: string) {
