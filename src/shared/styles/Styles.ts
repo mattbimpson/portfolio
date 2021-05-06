@@ -4,16 +4,19 @@ import { Primary } from "./colors";
 export const Container =
   styled.div`
     background-color: ${Primary};
+    opacity: 0.7;
     padding: 20px;
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 30px;
     box-sizing: border-box;
-    border-radius: 5px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
 
     @media (max-width: 780px) {
-      width: 100%;
       margin-top: -5px;
+      padding-left: 0;
+      padding-right: 0;
     }
   `;
 
