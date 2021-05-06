@@ -11,9 +11,9 @@ const HomePage: React.FC<any> = () => {
       <Container>
         <HeaderText>matt bimpson</HeaderText>
         <Text>
-          Hello, my name is Matt and I'm a Colombia based software developer from the UK. 
-          I have worked in development for around 10 years now, staying 'full stack' where I can. 
-          My core skills lie in Javascript frameworks such as Angular and React, and with C#.
+        Hello, my name is Matt and I'm a Colombia based software developer from the UK. 
+          I have worked in development for around 10 years now, staying full stack where I can. 
+          My core skills lie in Javascript frameworks such as VueJS and Angular, and with C#.
         </Text>
       </Container>
       <HeaderTextContainer>
