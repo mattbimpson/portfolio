@@ -15,8 +15,8 @@ export const Container =
 
     @media (max-width: 780px) {
       margin-top: -5px;
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   `;
 
