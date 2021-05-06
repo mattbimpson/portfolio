@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from '../../shared/styles/Styles';
 import { Text, HeaderText } from '../../shared/styles/Styles';
 import ProjectsContainer from '../../components/ProjectsContainer/ProjectsContainer';
+import { Footer } from './Styles';
 
 const HomePage: React.FC<any> = () => {
 
@@ -16,6 +17,9 @@ const HomePage: React.FC<any> = () => {
         </Text>
       </Container>
       <ProjectsContainer />
+      <br/>
+      <Footer>2021 matt bimpson</Footer>
+      <br/>
     </>
   )
 }
