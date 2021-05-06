@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from '../../shared/styles/Styles';
 import { Text, HeaderText } from '../../shared/styles/Styles';
 import ProjectsContainer from '../../components/ProjectsContainer/ProjectsContainer';
-import { Footer } from './Styles';
+import { Footer, HeaderTextContainer } from './Styles';
 
 const HomePage: React.FC<any> = () => {
 
@@ -16,6 +16,9 @@ const HomePage: React.FC<any> = () => {
           My core skills lie in Javascript frameworks such as Angular and React, and with C#.
         </Text>
       </Container>
+      <HeaderTextContainer>
+        <HeaderText>some projects</HeaderText>
+      </HeaderTextContainer>
       <ProjectsContainer />
       <br/>
       <Footer>2021 matt bimpson</Footer>

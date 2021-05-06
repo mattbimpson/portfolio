@@ -6,5 +6,12 @@ export const ChipContainer =
 
 export const Footer =
     styled.p`
+      color: white;
       text-align: center;
+    `;
+
+export const HeaderTextContainer =
+    styled.p`
+        width: 100%;
+        text-align: center;
     `;
