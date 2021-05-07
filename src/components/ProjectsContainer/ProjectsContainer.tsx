@@ -18,16 +18,16 @@ const items = [
     url: `${bitBucket}forms-validation-in-react/src/master/`
   },
   {
-    title: 'Ngrx Entity',
-    description: 'A demonstration of state normalisation using the ngrx entity package.',
-    image: 'angular',
-    url: `${bitBucket}ngrx-entity/src/master/ngrx-entity/README.md`
-  },
-  {
     title: 'Vue Todo',
     description: 'A simple todo app, made with VueJS using VueX state management and Tailwind CSS.',
     image: 'vue',
     url: `${bitBucket}todo-vue/src/master/README.md`
+  },
+  {
+    title: 'Ngrx Entity',
+    description: 'A demonstration of state normalisation using the ngrx entity package.',
+    image: 'angular',
+    url: `${bitBucket}ngrx-entity/src/master/ngrx-entity/README.md`
   },
   {
     title: 'ASP.NET middleware',
