@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 
 export const Container =
   styled.div`
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     background-color: ${Primary};
     display: flex;
     z-index: 9999;

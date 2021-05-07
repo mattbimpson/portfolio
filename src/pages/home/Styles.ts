@@ -11,7 +11,7 @@ export const Footer =
     `;
 
 export const HeaderTextContainer =
-    styled.p`
+    styled.div`
         width: 100%;
         text-align: center;
     `;

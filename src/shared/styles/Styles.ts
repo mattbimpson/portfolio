@@ -7,14 +7,14 @@ export const Container =
     opacity: 0.7;
     padding: 20px;
     width: 100%;
-    margin: 0 auto;
+    margin-top: 60px;
     box-sizing: border-box;
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
 
     @media (max-width: 780px) {
-      margin-top: -5px;
+      margin-top: 50px;
       padding-left: 15px;
       padding-right: 15px;
     }
