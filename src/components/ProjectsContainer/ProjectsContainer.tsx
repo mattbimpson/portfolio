@@ -25,7 +25,7 @@ const items = [
   },
   {
     title: 'Vue Todo',
-    description: 'A simple todo app, in VueJS using VueX state management.',
+    description: 'A simple todo app, made with VueJS using VueX state management and Tailwind CSS.',
     image: 'vue',
     url: `${bitBucket}todo-vue/src/master/README.md`
   },
