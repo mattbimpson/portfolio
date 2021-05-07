@@ -13,7 +13,7 @@ const HomePage: React.FC<any> = () => {
         <Text>
         Hello, my name is Matt and I'm a Colombia based software developer from the UK. 
           I have worked in development for around 10 years now, staying full stack where I can. 
-          My core skills lie in Javascript frameworks such as VueJS and Angular, and with C#.
+          My core skills lie in Javascript frameworks such as VueJS and React, and with C#.
         </Text>
       </Container>
       <HeaderTextContainer>
