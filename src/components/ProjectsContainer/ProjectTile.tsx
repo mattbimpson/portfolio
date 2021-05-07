@@ -9,7 +9,7 @@ import nest from '../../assets/images/nest.jpeg';
 import node from '../../assets/images/node.png';
 import python from '../../assets/images/python.jpeg';
 import react from '../../assets/images/react.jpg';
-import vue from '../../assets/images/vue.png';
+import vue from '../../assets/images/vuejs.png';
 import kube from '../../assets/images/kubernetes.png';
 
 export interface ProjectItemProps {
