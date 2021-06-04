@@ -24,6 +24,12 @@ const items = [
     url: `${bitBucket}todo-vue/src/master/README.md`
   },
   {
+    title: 'ExpressJS',
+    description: 'An ExpressJS API, using Typescript, Jest & Swagger.',
+    image: 'node',
+    url: `${bitBucket}expressjs/src/master/README.md`
+  },
+  {
     title: 'Ngrx Entity',
     description: 'A demonstration of state normalisation using the ngrx entity package.',
     image: 'angular',
