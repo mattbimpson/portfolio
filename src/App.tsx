@@ -10,8 +10,6 @@ const App: React.FC<any> = (props: any) => {
 
   const { location } = props;
 
-  if (location.pathname.includes('/food')) window.location.href = 'https://mattsrecipes.surge.sh';
-
   return (
     <>
       <Header></Header>
