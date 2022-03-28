@@ -11,10 +11,10 @@ const HomePage: React.FC<any> = () => {
       <Container>
         <HeaderText>matt bimpson</HeaderText>
         <Text>
-        Hello, my name is Matt and I'm a Colombia based software developer from the UK. 
+        Hello, my name is Matt and I'm a software developer from the UK. 
           I have worked in development for around 10 years now, staying full stack where I can. 
           My core skills lie in Javascript frameworks such as VueJS and API development with NodeJS or C#.
-          I have experience in the setup and administration of cloud environments with Azure, and like to stay upto date by working on personal projects hosted in bitbucket.
+          I have experience in cloud computing solutions with AWS and Azure, and like to stay upto date by working on personal projects hosted in bitbucket.
         </Text>
       </Container>
       <HeaderTextContainer>
