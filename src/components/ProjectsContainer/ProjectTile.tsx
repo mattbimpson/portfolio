@@ -11,6 +11,7 @@ import python from '../../assets/images/python.jpeg';
 import react from '../../assets/images/react.jpg';
 import vue from '../../assets/images/vuejs.png';
 import kube from '../../assets/images/kubernetes.png';
+import terraform from '../../assets/images/terraform.png';
 
 export interface ProjectItemProps {
   title: string;
@@ -51,6 +52,8 @@ const ProjectTile: React.FC<ProjectItemProps> = (props) => {
         return vue;
       case 'kube':
         return kube;
+      case 'terraform':
+        return terraform;
     }
   }
 

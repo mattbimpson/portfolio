@@ -1,15 +1,22 @@
 import React from 'react';
 import { Container } from './ProjectsStyles';
 import ProjectTile from './ProjectTile';
+import { Project } from '../../types/Project';
 
 const bitBucket = 'https://bitbucket.org/mbimpson/';
 
-const items = [
+const items: Project[] = [
   {
     title: 'Recipes App',
     description: 'A recipes catalog/sharing app, made in Vue JS',
     image: 'vue',
     url: 'https://mattsrecipes.surge.sh'
+  },
+  {
+    title: 'Terraform Basics',
+    description: 'How to deploy an application using AWS API Gateway, AWS Lambda and NodeJS using Terraform.',
+    image: 'terraform',
+    url: 'https://github.com/mattbimpson/HelloWorldAWS'
   },
   {
     title: 'React forms validation',

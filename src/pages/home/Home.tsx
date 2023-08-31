@@ -22,7 +22,7 @@ const HomePage: React.FC<any> = () => {
       </HeaderTextContainer>
       <ProjectsContainer />
       <br/>
-      <Footer>2021 matt bimpson</Footer>
+      <Footer>2023 matt bimpson</Footer>
       <br/>
     </>
   )
