@@ -7,7 +7,7 @@ export default [
     title: 'Recipes App',
     description: 'A recipes catalog/sharing app, made in Vue JS',
     image: 'vue',
-    url: 'https://mattsrecipes.surge.sh'
+    url: 'https://recipes-dhm3jbfsq-mattbimpson.vercel.app/'
   },
   {
     title: 'Terraform Basics',
